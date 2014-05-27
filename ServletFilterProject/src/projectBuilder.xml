@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="ServletFilterProject.makejar" default="makejar" basedir=".">
   <target name ="makejar" description="Create a jar for ServletFilterProject">
-    <jar jarfile="catnip-xss-filter-mod.jar" includes="*.class" basedir="build"/>
+    <jar destfile="lib/catnip-xss-filter-mod.jar" 
+    	includes="org/webdroid/catnip/filter/**" 
+    	basedir="build/classes"/>
   </target>
 </project>
