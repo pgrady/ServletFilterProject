@@ -11,26 +11,29 @@
   </welcome-file-list>
   <filter>
     <filter-name>Catnip</filter-name>
+    <!--  
     <filter-class>org.webdroid.catnip.filter.BadInputFilter</filter-class>
+    -->
+    <filter-class>net.sf.catnip.BadInputFilter</filter-class>
     <init-param>
     	<param-name>allow</param-name>
-    	<param-value>false</param-value>
+    	<param-value>.*</param-value>
     </init-param>
     <init-param>
     	<param-name>deny</param-name>
-    	<param-value>&lt;script</param-value>
+    	<param-value>&lt;script&gt;,%3Cscript%3E</param-value>
     </init-param>
     <init-param>
         <param-name>escapeQuotes</param-name>
-        <param-value>false</param-value>
+        <param-value>true</param-value>
     </init-param>
     <init-param>
     	<param-name>escapeAngleBrackets</param-name>
-    	<param-value>false</param-value>
+    	<param-value>true</param-value>
     </init-param>
     <init-param>
     	<param-name>escapeJavaScript</param-name>
-    	<param-value>false</param-value>
+    	<param-value>true</param-value>
     </init-param>
   </filter>
 <filter-mapping>
